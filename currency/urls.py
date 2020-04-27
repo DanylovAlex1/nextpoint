@@ -3,7 +3,7 @@ from .views import *
 
 urlpatterns = [
     path('', GetStartView.as_view(), name='base.html'),
-    path('dic/', testShowData, name='dic_view'),
+    path('dic/', extractData, name='dic_view'),
     path('chart/<int:year>/<int:month>',ChartsView.as_view(), name='charts'),
     path('chart/json/', LineChartJSONView.as_view(), name='line_chart_json'),
 

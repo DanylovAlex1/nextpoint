@@ -62,7 +62,7 @@ class GetStartView(View):
         return render(request, template_name='base.html')
 
 
-def testShowData(request):
+def extractData(request):
     html = get_html(URL, HEADERS)
     rows = get_content(html.text)
     saveToDB(rows)
