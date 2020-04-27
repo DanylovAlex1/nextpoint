@@ -1,0 +1,40 @@
+{% extends 'skeleton.html' %}
+
+{% block content %}
+
+<div class="card">
+    <div class="card-header">
+        Load
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+
+                        {% for yr in cont %}
+                        <div class="form-check">
+                            <a href="{% url 'charts' yr 1 %}">{{ yr }}</a>
+                        </div>
+                        {% endfor%}
+
+
+                    </div>
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
+    </blockquote>
+</div>
+</div>
+
+{% endblock %}
+
+
+
+
