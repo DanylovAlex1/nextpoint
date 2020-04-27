@@ -42,7 +42,6 @@ def saveToDB(obj=None):
             a = row['A']
             b = row['B']
             date= getDateFormatted(dt)
-#           print(cnt,'| date= ', dt, '|  A=', a, '|  B=', b)
             p=Usd(date=date, buy=a, sale=b)
             p.save()
 
@@ -50,26 +49,4 @@ def saveToDB(obj=None):
         print('Values are not present')
 
     return cnt
-
-
-
-# def main():
-#     html = get_html(URL, HEADERS)
-#     rows = get_content(html.text)
-#     saveToDB(rows)
-#
-# if __name__=='__main__':
-#     main()
-
-
-
-'''
-SELECT strftime('%Y',date)  as years from currency_usd group by years
-
-select * from currency_usd Where strftime('%Y',date)='2006'
-and strftime('%m',date) ='04'
-
-
-'''
-
 

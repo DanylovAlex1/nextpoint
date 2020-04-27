@@ -79,20 +79,3 @@ class LoadView(View):
         return render(request, template_name=self.template_name,
                       context={'cont': years})
 
-
-# class LoadYearView(View):
-#     mon = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-#     template_name = 'loadyear.html'
-#     context_object_name = 'contyear'
-#     def get(self, request, year=2020):
-#         return render(request, template_name=self.template_name,context={'month': self.mon})
-
-
-'''
-SELECT strftime('%Y',date)  as years from currency_usd group by years
-
-select * from currency_usd Where strftime('%Y',date)='2006'
-and strftime('%m',date) ='04'
-
-
-'''

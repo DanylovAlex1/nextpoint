@@ -8,6 +8,6 @@ urlpatterns = [
     path('chart/json/', LineChartJSONView.as_view(), name='line_chart_json'),
 
     path('load/', LoadView.as_view(), name='load_data'),
-#    path('load/<int:year>', LoadYearView.as_view(), name='load_year_data'),
+
 
 ]

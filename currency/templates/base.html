@@ -1,3 +1,26 @@
 {% extends 'skeleton.html' %}
 
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-4">
 
+<div class="container">
+    <div class="row">
+        {% for mn in month %}
+        <div class="form-check">
+            <a href="{% url 'load_year_data'  %}">{{ mn }}</a>
+        </div>
+        {% endfor%}
+
+    </div>
+</div>
+
+    </div>
+    <div class="col-8">
+        {% block second %}
+        {% endblock %}
+    </div>
+  </div>
+</div>
+{% endblock %}
