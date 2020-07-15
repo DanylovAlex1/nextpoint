@@ -1,6 +1,6 @@
 # nextpoint
 V. 0.01
-I decided to learn Python + Django during such a damn quarantine.
+I decided to learn BS4 during such a damn quarantine.
 so, please don't kill me. I realize all mistakes in this code. But this is my first Python-Django project.
 as an example, I don't care about months. Data start from September and finished April, but all set choices from Jan to Dec each year (hardcoded) :)
 
